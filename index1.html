@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>C Programming</title>
     <style>
         body{
             background-color: black;
@@ -18,23 +18,32 @@
 </head>
 <body>
     <div class="simplehacker">
-    <h1>Iterative Method</h1>
-    <p>An Iterative Method to do this is to <br> write the printf() statement 10 times..</p>
-     
-    <b>C</b>
+        <h1>C Programming</h1>
+        <p>An Iterative Method to do this is to <br> write the printf() statement 10 times..</p>
+         
+        <b>C</b>
+    
+        <pre>
+/*Ramesh’s basic salary is input through the keyboard. His dearness
+allowance is 40% of basic salary, and house rent allowance is 20% of
+basic salary. Write a program to calculate his gross salary.*/
 
-    <pre>
-        // C program to print 'hello world'
-		__________________________________________
-        #include<stdio.h>
-		int main()
-         {
-            printf(" Hello World\n");
-			return 0;
-         }
-
-
-    </pre>
-</div>
+<code>
+#include&lt;stdio.h&gt;
+int main()
+{
+    float gross_sal, bacic_sal,dearness_allowance,house_rent;
+    printf("Enter the basic sallery=");
+    scanf("%f",&bacic_sal);
+    dearness_allowance= 0.4*bacic_sal;
+    house_rent= 0.2*bacic_sal;
+    gross_sal= bacic_sal+dearness_allowance+house_rent;
+    printf("The Total salary of Ramesh's is = %.2f",gross_sal);
+    return 0;
+}
+          </code>  
+    
+        </pre>
+    </div>
 </body>
 </html>
